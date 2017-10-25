@@ -9,19 +9,19 @@ class Artist
 
 #adds a new song to artist's @songs array
   def add_song(song)
-    self.songs << song
+    @songs << song
 #tells song it belongs to the artist
     song.artist = self
   end
 
 #has many songs
   def songs
-    self.songs
+    2songs
   end
 
 #has many genres, through songs
   def genres
-    self.songs.collect do |song|
+    @songs.collect do |song|
       song.genre
     end
   end
