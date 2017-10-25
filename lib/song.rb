@@ -7,7 +7,7 @@ class Song
     @name = name
     @genre = genre
 #belongs to a genre and artist
-    genre.add_song(self)
+    genre.songs << self
   end
 
 end
