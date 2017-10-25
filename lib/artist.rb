@@ -21,7 +21,7 @@ class Artist
 
 #has many genres, through songs
   def genres
-    self.songs.collect do |song|
+    @songs.collect do |song|
       song.genre
     end
   end
