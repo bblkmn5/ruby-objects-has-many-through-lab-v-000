@@ -16,7 +16,7 @@ class Artist
 
 #has many songs
   def songs
-    2songs
+    @songs
   end
 
 #has many genres, through songs
