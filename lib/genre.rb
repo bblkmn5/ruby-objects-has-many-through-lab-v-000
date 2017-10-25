@@ -12,6 +12,7 @@ class Genre
   def songs
     @songs
   end
+  
 #adds a song to the @songs array for each genre
   def add_song(song)
     @songs << song
