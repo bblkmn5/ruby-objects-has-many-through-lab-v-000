@@ -9,14 +9,14 @@ class Artist
 
 #adds a new song to artist's @songs array
   def add_song(song)
-    @songs << song
+    self.songs << song
 #tells song it belongs to the artist
     song.artist = self
   end
 
 #has many songs
   def songs
-    @songs
+    self.songs
   end
 
 #has many genres, through songs
