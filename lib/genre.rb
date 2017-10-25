@@ -20,7 +20,7 @@ class Genre
 
 #has many artists, through songs
   def artists
-    @song.collect do |song|
+    @songs.collect do |song|
       song.artist
     end
   end
