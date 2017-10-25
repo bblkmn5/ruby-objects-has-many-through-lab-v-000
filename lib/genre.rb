@@ -10,16 +10,16 @@ class Genre
 
 #has many songs
   def songs
-    self.songs
+    @songs
   end
 #adds a song to the @songs array for each genre
   def add_song(song)
-    self.songs << song
+    @songs << song
   end
 
 #has many artists, through songs
   def artists
-    self.songs.collect do |song|
+    @songs.collect do |song|
       song.artist
     end
   end
